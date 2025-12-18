@@ -7,6 +7,7 @@ Objective: Establish accountability and defined roles for data protection.
 1.1 Core Requirements
 Role Management: System must allow the definition of roles including Data Protection Officer (DPO), Grievance Officer, and Authorised Signatories.
 Hierarchy: Define reporting lines and governance structure within the dashboard.
+
 1.2 Enhanced Statutory Requirements (2025 Rules)
 Public Contact Person: The system must push the business contact information of the DPO or a designated person capable of answering processing queries to all public-facing Privacy Notices.
 Significant Data Fiduciary (SDF) Status Tracking:
@@ -19,6 +20,7 @@ Objective: Present clear, compliant information to users before data collection.
 2.1 Core Requirements
 Multi-Lingual Support: Notices must be available in 22 official languages.
 Channel Distribution: Publish via Web, App, and Physical touchpoints.
+
 2.2 Enhanced Statutory Requirements (2025 Rules)
 Independent Understanding: The Notice UI must be presented separately and be understandable independently of other Terms of Service.
 Itemized Data Display: The Notice must display an itemized description of the personal data being collected (e.g., "Bank Account", "GPS Location" rather than just "Financial Info").
@@ -32,12 +34,14 @@ Objective: A centralized "Traffic Controller" module handling consent for all cl
 3.1 Core Requirements
 Affirmative Action: Consent must be clear, informed, and unambiguous.
 Audit Trails: Log timestamp, purpose, and channel of consent.
+
 3.2 Enhanced Statutory Requirements (2025 Rules)
 Verifiable Parental Consent (Children):
 Workflow: Before processing child data, the system must obtain verifiable parental consent.
 Parent ID Check: The module must integrate with a verification system (e.g., DigiLocker, Government ID, or Virtual Token) to confirm the parent is an identifiable adult.
 Guardian Verification (PWD): For Persons with Disabilities (PWD), the system must verify that the consenting Guardian is appointed by a court or designated authority.
 Ease of Withdrawal: The UI must ensure that withdrawing consent is as easy as giving it (e.g., a "One-Click Withdraw" button in the user profile).
+
 3.3 Technical Architecture Specifications
 Central Registry: A central database table User_Consent_Registry tracking User_ID, App_ID, Purpose_Code, Consent_Status, and Timestamp.
 API Gateway:
@@ -63,6 +67,7 @@ Objective: Detect, log, and report personal data breaches within strict legal ti
 5.1 Core Requirements
 Incident Log: Identification, assessment, and classification of breaches.
 Notification Engine: Tools to notify the Board and Data Principals.
+
 5.2 Enhanced Statutory Requirements (2025 Rules)
 User Notification ("Without Delay"):
 Trigger: Must be sent "without delay" upon becoming aware of a breach.
@@ -81,6 +86,7 @@ Objective: Manage Data Processors (cloud providers, payroll vendors) to ensure c
 6.1 Core Requirements
  Inventory: List of all third-party Data Processors.
  Contract Management: Update contracts with DPDP clauses.
+ 
 6.2 Enhanced Statutory Requirements (2025 Rules)
  Mandatory Security Clauses: Contracts must explicitly require processors to adopt "techno-legal" security safeguards (encryption, access control).
  Cascading Retention: The system must be able to verify that Processors utilize the same retention logic (e.g., 1-year log retention) as the Fiduciary.
@@ -90,6 +96,7 @@ Objective: Proactive risk identification.
 
 7.1 Core Requirements
 DPIA: Conduct assessments for high-risk processes.
+
 7.2 Enhanced Statutory Requirements (2025 Rules)
 SDF Audit Cycle: For Significant Data Fiduciaries, the system must trigger a DPIA and Audit workflow every 12 months.
 Report Submission: The system must generate a report containing "significant observations" from the audit for submission to the Board.
